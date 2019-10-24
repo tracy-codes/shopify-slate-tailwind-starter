@@ -1,0 +1,49 @@
+{
+  "name": "slate-tailwind-starter",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Shopify Inc., Tracy Adams",
+  "description": "A barebones, Slate compatible, starting point for developing Shopify themes with Tailwindcss.",
+  "keywords": [
+    "shopify",
+    "theme",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tracy-codes/shopify-slate-tailwind-starter"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@shopify/slate-tools": "^1.0.0-beta.14",
+    "autoprefixer": "^9.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-shopify": "^16.6.0",
+    "babel-preset-vue": "^2.0.2",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-url": "^8.0.0",
+    "tailwindcss": "^1.0.1"
+  },
+  "scripts": {
+    "start": "slate-tools start",
+    "watch": "slate-tools start --skipFirstDeploy",
+    "build": "slate-tools build",
+    "deploy": "slate-tools build && slate-tools deploy",
+    "zip": "slate-tools build && slate-tools zip",
+    "tailwind": "postcss src/styles/theme.scss -o dist/assets/tailwind.css"
+  },
+  "dependencies": {
+    "vue": "^2.5.21",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^2.0.0"
+  }
+}
