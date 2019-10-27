@@ -1,3 +1,5 @@
+// Configuration file for all things Slate.
+// For more information, visit https://github.com/Shopify/slate/wiki/Slate-Configuration
 /* eslint-disable no-undef */
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
